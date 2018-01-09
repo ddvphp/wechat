@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\WechatPay\Lib;
+namespace DdvPhp\Wechat\PayLib;
 
 /**
 * 2015-06-29 修复签名问题

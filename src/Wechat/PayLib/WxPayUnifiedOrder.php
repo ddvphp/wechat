@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\WechatPay\Lib;
+namespace DdvPhp\Wechat\PayLib;
 
 /**
  *
