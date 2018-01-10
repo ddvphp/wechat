@@ -20,16 +20,14 @@ class WxPayConfig
 	public static $REPORT_LEVENL = 1;
 	public static $NOTIFY_URL;			//异步通知url
 
-	public static function load_config($type='mp'){
-		$get_config =\Config::get('wechat.payment');
-		$config=$get_config[$type];
+	public static function load_config($config=array()){
 
-		self::$APPID=$config['aapid'];
-		self::$MCHID=$config['mchid'];
-		self::$KEY=$config['key'];
-		self::$APPSECRET=$config['appsecret'];
-		self::$SSLCERT_PATH=$config['sslcert_path'];
-		self::$SSLKEY_PATH=$config['sslkey_path'];
+		self::$APPID=$config['appId']?$config['appId']:self::$APPID;
+		self::$MCHID=$config['mchId']?$config['mchId']:self::$MCHID;
+		self::$KEY=$config['key']?$config['key']:self::$KEY;
+		self::$APPSECRET=$config['appSecret']?$config['appSecret']:self::$APPSECRET;
+		self::$SSLCERT_PATH=$config['sslcertPath']?$config['sslcertPath']:self::$SSLCERT_PATH;
+		self::$SSLKEY_PATH=$config['sslkeyPath']?$config['sslkeyPath']:self::$SSLKEY_PATH;
 	}
 
 

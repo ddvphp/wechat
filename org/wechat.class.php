@@ -242,9 +242,9 @@ class Wechat
 	public function __construct($options)
 	{
 		$this->token = isset($options['token'])?$options['token']:'';
-		$this->encodingAesKey = isset($options['encodingaeskey'])?$options['encodingaeskey']:'';
-		$this->appid = isset($options['appid'])?$options['appid']:'';
-		$this->appsecret = isset($options['appsecret'])?$options['appsecret']:'';
+		$this->encodingAesKey = isset($options['encodingAESKey'])?$options['encodingAESKey']:'';
+		$this->appid = isset($options['appId'])?$options['appId']:'';
+		$this->appsecret = isset($options['appSecret'])?$options['appSecret']:'';
 		$this->debug = isset($options['debug'])?$options['debug']:false;
 		$this->logcallback = isset($options['logcallback'])?$options['logcallback']:false;
 	}
