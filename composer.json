@@ -13,7 +13,7 @@
 			"DdvPhp\\": "src/"
 		}
 	},
-	"license": "LGP-2.1",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "yuchonghua",
